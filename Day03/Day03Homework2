@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Day03Homework2 {
+    public static void main (String [] args){
+    // Bai 4
+    // System.out.println("Nhap 1 so:");
+    Scanner scanner = new Scanner(System.in);
+    // int number =scanner.nextInt(); 
+    
+    // int i =1;
+    
+    // while (i<=10)
+    // {
+    //     int multiply = number * i;
+    //     System.out.println(number +" * " +i +" = " +multiply);
+    //     i++;
+    //     }
+    // Bai 5
+    // System.out.println("Nhap 1 chuoi:");
+    // String chuoi = scanner.nextLine();
+    // String reverse = "";
+    // System.out.println(chuoi.charAt(chuoi.length()-1));
+    // for (int a=chuoi.length()-1;a>=0;a--)
+    // {
+    //     reverse = reverse + chuoi.charAt(a) ;
+    // }
+    // System.out.println(reverse);
+    //Bai 6
+    System.out.println("Nhap 1 chuoi:");
+    String viethoa = scanner.nextLine();
+    String word[] = viethoa.split("\\s");
+    String newString ="";
+    for (String w:word)
+    {
+        String first = w.substring(0,1);     
+        String rest = w.substring(1); 
+        newString = newString +first.toUpperCase()+rest+" "; 
+    }
+    System.out.println(newString);
+
+    scanner.close();
+    }
+}
