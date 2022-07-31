@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 public class Day03Homework2 {
     public static void main (String [] args){
     // Bai 4
@@ -37,6 +38,17 @@ public class Day03Homework2 {
     }
     System.out.println(newString);
 
+ //Bai 7
+    System.out.println("Nhap so giay trong ngay:");
+    int sogiay = scanner.nextInt();
+    double gio = sogiay/3600.0;
+    int gioin = (int) gio;
+    double phut = gio - gioin;
+    double phutTemp= phut*60.0;
+    int phutin = (int) phutTemp;
+    double giay = phutTemp - phutin;
+    double giayTemp = giay *60.0;
+    System.out.println(gioin+" : "+phutin+" : " + Math.round(giayTemp));
     scanner.close();
     }
 }
