@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class HomeworkDay04 {
 
@@ -135,6 +136,19 @@ public class HomeworkDay04 {
     //     }
     //     System.out.println();
     // }
+    //bai6
+    // Scanner scanner = new Scanner(System.in);
+    // String emailPattern = 
+    // "^[a-zA-Z][\\w-.]+@([\\w]+\\.[\\w]+|[\\w]+\\.[\\w]{2,}\\.[\\w]{2,})$";
+    // System.out.println("Nhap email de kiem tra:");
+    // String email = scanner.nextLine();
+    // System.out.println(email + ": " + Pattern.matches(emailPattern, email));
+    // String phonePattern =
+    // "(\\d{9})|(\\d{10})|(\\d{11})";
+    // System.out.println("Nhap so dien thoai de kiem tra:");
+    // String phone = scanner.nextLine();
+    // System.out.println(phone + ": " + Pattern.matches(phonePattern, phone));
+    // scanner.close();
 }
 }
 
